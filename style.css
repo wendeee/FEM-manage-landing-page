@@ -1,0 +1,677 @@
+/* Custom Properties */
+:root{
+  --clr-primary-red: hsl(12, 88%, 59%);
+  --clr-primary-blue: hsl(228, 39%, 23%);
+
+  --clr-neutral-white: hsl(0, 0, 100%);
+  --clr-neutral-blue: hsl(227, 12%, 61%);
+  --clr-neutral-dark: hsl(233, 12%, 13%);
+  --clr-neutral-paleRed: hsl(13, 100%, 96%);
+  --clr-neutral-light: hsl(0, 0%, 98%); 
+
+  /* fonts */
+
+  --font: 16px;
+  --font-sm: 400;
+  --font-md: 500;
+  --font-bold: 700;
+
+  /* padding */
+
+  --pd-btm: 1.5rem;
+  --pd-btm-sm: 1rem;
+  --pd-btm-x-sm: .6rem;
+  --pd-btm-x-lg: 5rem;
+  --pd-btm-lg: 2.5rem;
+
+  /* margin */
+  --mg-rt: 6rem;
+
+ 
+}
+
+.container-cover{
+  /* width: 1440px; */
+  max-width: 100%;
+  /* position: relative;
+  z-index: 1; */
+  /* border: 1px solid red; */
+  /* background-color: blueviolet; */
+  margin: 0 auto;
+
+  background-image: url("images/bg-tablet-pattern.svg");
+  background-position: 120% -60%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  
+}
+
+header{
+  
+  /* width: 1440px; */
+  max-width: 100%;
+  padding-top: 2rem;
+  position: relative;
+  z-index: 1;
+ 
+  
+  /* margin: 0 auto; */
+}
+
+ /* utiltity classes */
+ .flex-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ .even-columns{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1.5rem;
+ }
+
+.container-div{
+  margin: 1.5rem 0rem 1.5rem 6rem;
+  display: flex;
+ 
+  
+  
+}
+
+.space{
+  column-gap: 12rem;
+}
+ /*list styles  */
+
+ul{
+  list-style: none;
+  column-gap: 1rem;
+}
+
+a{
+  text-decoration: none;
+  color: var(--clr-primary-blue);
+  font-size: .8rem;
+}
+
+button{
+  outline: none;
+  padding: .5rem 1rem;
+  border-radius: 25px;
+  border-width: 1px;
+  background-color: var(--clr-primary-red);
+  color: white;
+  /* border-color: var(--clr-primary-red); */
+  border: none;
+  cursor: pointer;
+  font-size: .8rem;
+  font-weight: var(--font-md);
+
+ 
+}
+
+.btn-bg{
+  margin-right: 12rem;
+  
+}
+
+.btn-md{
+  padding: .5rem 1rem;
+}
+
+.mobile-icon{
+  display: none;
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html,
+body{
+  height: 100%;
+  font-family:'Be Vietnam Pro', sans-serif;;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* main */
+.sect-one{
+  padding-bottom: var(--pd-btm);
+}
+.intro-text{
+  width: 50%;
+ 
+}
+h2{
+  font-size: 3.5rem;
+  color: var(--clr-primary-blue);
+  font-weight: var(--font-bold);
+  line-height: 1;
+  letter-spacing: .5;
+  padding-bottom: var(--pd-btm);
+}
+
+
+p{
+  color: var(--clr-neutral-blue);
+  width: 55%;
+  padding-bottom: var(--pd-btm);
+  font-size: .9rem;
+}
+
+
+
+.illustration img{
+  width: 80%;
+  margin-right: 6rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* section two */
+
+.two{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.main-two{
+  display: flex;
+  
+}
+
+.main-two .one, .main-two .two{
+  width: 50%;
+}
+
+.list{
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  margin-left: -4rem;
+}
+
+h3{
+  color: var(--clr-primary-blue);
+  font-size: 2rem;
+  letter-spacing: .8;
+  font-weight: var(--font-bold);
+  padding-bottom: var(--pd-btm);
+  width: 80%;
+  line-height: 1.2;
+}
+
+.main-two p{
+  width: 70%;
+}
+
+.btn-list{
+ margin-right: 1rem;
+ text-align: center;
+ padding: .3rem 1.1rem;
+ border-radius: 25px;
+ background-color: var(--clr-primary-red);
+ color: #ffffff;
+ font-size: .8rem;
+}
+
+.main-two h5{
+  color: var(--clr-primary-blue);
+  font-weight: var(--font-bold);
+  font-size: 1rem;
+  padding-bottom: var(--pd-btm-sm);
+  letter-spacing: .5;
+}
+
+/* slider */
+.slider{
+  background-image: url("images/bg-tablet-pattern.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+ 
+}
+.slider h3{
+  text-align: center;
+  width: 100%;
+  padding-top: var(--pd-btm);
+  
+}
+
+.slider-btn{
+  width: 100%;
+  text-align: center;
+  padding-bottom: var(--pd-btm-lg);
+}
+
+.cta{
+  display: flex;
+  align-items: center;
+  padding: 2rem 8rem;
+  background-color: var(--clr-primary-red);
+  justify-content: space-between;
+}
+.cta h3{
+  color: white;
+}
+
+.cta button{
+  background-color: white;
+  
+  color: var(--clr-primary-red);
+ 
+}
+
+/* Footer */
+
+.footer{
+  padding: 2rem 8rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--clr-neutral-dark);
+  color: white;
+}
+
+.footer a{
+  color: white;
+}
+
+#logo{
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.logo{
+  padding-bottom: var(--pd-btm-x-lg);
+}
+
+.social-icons a img{
+  display: inline;
+  width: 10%;
+  margin-left: 8px;
+}
+
+
+.footer-nav{
+  display: flex;
+  column-gap: 8rem;
+}
+
+.footer-nav li{
+  padding-bottom: var(--pd-btm-x-sm);
+}
+
+input[type="email"],
+
+input[type="submit"]{
+  border-radius: 25px;
+  padding: .6rem;
+  font-size: .8rem;
+  outline: none;
+  border-style: none;
+  
+}
+
+input[type="submit"]{
+  padding: .3rem .7rem;
+  background-color: var(--clr-primary-red);
+  color: white;
+  margin-left: 2px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.form p{
+  font-size: .7rem;
+  padding-top: var(--pd-btm-lg);
+  margin-right: 0;
+  width: 100%;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media screen and (max-width:1075px){
+    .nav-menu,
+    .nav-btn{
+      display: none;
+    }
+
+    .mobile-icon{
+      display: inline-block;
+      margin-right: 7rem;
+    }
+
+    .illustration{
+      width: 50%;
+    }
+
+    .intro-text{
+      width: 40%;
+    }
+
+    .intro-text h2{
+      font-size: 2.9rem;
+      letter-spacing: -1px;
+    }
+
+    .intro-text p{
+      width: 80%;
+    }
+
+    .intro-text button{
+      padding: .5rem 2rem;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+  .intro-text h2{
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+  }
+}
+
+@media screen and (max-width: 920px){
+  .sect-one{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .illustration,
+  .intro-text{
+    width: 100%;
+    /* margin: 0 auto; */
+  }
+
+  .illustration img{
+    margin: 0 auto;
+  }
+
+  .intro-text h2{
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .intro-text p{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .intro-text button{
+   position: relative;
+   left: 40%;
+   
+  }
+
+  .main-two{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-two .one{
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  .main-two h3{
+    font-size: 2.5rem;
+  } 
+
+  .main-two p,
+  .main-two h3
+  {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+}
+
+@media screen and (max-width: 784px){
+  html, body{
+    width: 800px;
+    max-width: 100%;
+  }
+
+  .container-cover{
+    background-position: 10% -10%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .illustration{
+    padding-bottom: var(--pd-btm-lg);
+    width: 100%;
+  }
+
+  .intro-text{
+    width: 100%;
+   
+  }
+
+  .intro-text h2{
+    width: 100%;
+    line-height: 1.2;
+  }
+  .intro-text p{
+    width: 80%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .intro-text button{
+    padding: .9rem 3rem;
+    font-size: 1.1rem;
+    left: 35%;
+  }
+
+  .footer{
+    flex-wrap: wrap;
+  }
+
+
+}
+
+
+@media screen and (min-width: 375px) and (max-width: 720px){
+  body{
+    width: 100%;
+  }
+
+ .container-div{
+  padding: 0;
+  margin: 0;
+
+ }
+
+ .container-cover{
+  
+  background-size: auto ;
+  
+ }
+
+ .mobile-icon{
+  margin-right: 0;
+ }
+ header{
+  padding: 2rem;
+ }
+ .intro-text{
+  padding-bottom: var(--pd-btm-lg);
+ }
+
+ .intro-text h2{
+  font-size: 2.5rem;
+  font-weight: var(--font-bold);
+ }
+
+ .intro-text p{
+  font-size: 1.2rem;
+ }
+
+ .intro-text button{
+  padding: .5rem 1.3rem;
+  left: 30%;
+
+ }
+
+ .main-two .one h3{
+  font-size: 1.8rem;
+  width: 70%;
+} 
+
+.main-two .one p{
+  width: 90%;
+  font-size: 1.1rem;
+  padding-bottom: var(--pd-btm-lg);
+}
+
+.main-two .two{
+  width: 100%;
+  text-align: center;
+}
+
+.list{
+ 
+  margin: 0 auto;
+}
+
+.two p{
+  width: 100%;
+  font-size: 1.1rem;
+  margin-left: -30px;
+  padding-top: var(--pd-btm);
+}
+
+.two h5{
+  font-size: 1.17rem;
+  letter-spacing: -1.1px;
+  border: 1px solid red;
+  background-color: var(--clr-neutral-paleRed);
+  width: 95%;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  text-align: center;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-left: -10px;
+}
+
+.btn-list{
+  padding: .8rem 1.2rem;
+  border-radius: 19px;
+  margin-right: -2px;
+  position: relative;
+}
+
+.cta{
+  flex-direction: column;
+  padding: 3rem;
+  padding-bottom: 4rem;
+}
+.cta h3{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.footer{
+  flex-direction: column-reverse;
+  padding: 0;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+.footer :nth-child(3){
+  order: 1;
+}
+.footer :nth-child(5){
+  order: 1;
+}
+
+.footer .footer-nav{
+  
+ justify-content: center;
+  column-gap: 6rem;
+  padding-bottom: var(--pd-btm-lg);
+}
+
+.footer .logo-img{
+  text-align: center;
+  margin: 0 auto;
+  width: 50%;
+  padding-bottom: 0;
+}
+input[type="email"]{
+  padding: .7rem 2rem;
+}
+
+.social-icons a img{
+ width: 6%;
+ margin-right: 15px;
+}
+}
